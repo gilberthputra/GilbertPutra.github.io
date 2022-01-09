@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NYC TLC - GILBERT PUTRA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">GILBERT PUTRA</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>NYC YELLOW TAXI</h1>
+							<h2>Predicting Tip Amount Based on Hourly Weather Forecast</h2>
+							<span class="image main"><img src="nyc_tlc/banner.jpg" alt="" /></span>
+							<p>NOTE : Above picture is taken from and courtesy of <a href = "https://inhabitat.com/mit-says-3000-ride-sharing-cars-could-replace-all-new-york-city-taxis/">inhabitat.com</a>.</p>
+							<p>
+								This <b>Project</b> ultimately aims to develop <b>Penalised Regression Model</b> for which it has the capacity to predict <b>Tip Amount</b>
+								based on widely available hourly weather forecast.
+							</p>
+							<p>
+								Below are the following tasks:
+								<ol>
+									<li> <b>Extract</b> 2018 and 2019 Yellow Taxi Data from 
+										<a href = "https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page">New York City Taxi
+											 & Limousine Commission (NYC TLC)</a> page.</li>
+									<li> <b>Extract</b> Hourly Weather Data from 
+										<a href = "https://www.ncei.noaa.gov/data/global-hourly/archive/csv/">National Centers 
+											for Environmental Information (NCEI)</a> page.</li>
+									<li> Cleaned and Preprocessed <b>103 Million Instances</b> 
+										of NYC TLC Yellow Taxi by utilising <b>PySpark Architecture</b>.</li>
+									<li> Cleaned, Preprocessed and Combined NCEI Hourly Weather
+										 with the preprocessed NYC TLC Yellow Taxi dataset by utilising <b>PySpark Architecture</b>.</li>
+									<li> Perform a Preliminary Analysis (GeoSpatial and Features 
+										Analysis) on the combined dataset.</li>
+									<li> Perform Statistical Modelling.</li>
+								</ol>
+							</p>
+							<p>
+								In summary based on the results found from <b>2018</b>, <b>Taxi Drivers</b> 
+								are suggested to pickup from <b>La Guardia Airport</b> between <b>17:00 and 19:00</b> 
+								as passengers generally Tip more than other areas regardless of the weather. As 
+								<b>Tip Amount</b> shows little to no less correlation to weather forecasting. Moreover, 
+								the amount of weather data may be insufficient incomparison with NYC TLC Yellow Taxi data as 
+								weather was taken from the average of every hour reducing the amount of data. However, the 
+								weather data utilised were also taking measurement/reading every 15 minutes which might still be lacking
+								as there is significant data imbalance. Despite this, <b>Ridge Regression</b> performs comparably moderate 
+								dealing with this problem although it could still be improved by adding more relevant features or increasing
+								weather readings. 
+							</p>
+							<p>
+								NOTE : RESULTS AND DISCOVERY ARE LIMITED BY THE CAPACITY OF MY OWN DEVICE 
+								(SHOULD LEARN HOW TO USE CLOUD, MY DEVICE COULDN'T KEEP UP). IF OPPORTUNITY RISES, SHOULD 
+								TRY TO INCREASE WEATHER READINGS AS IT TAKES SIGNIFICANT AMOUNT OF MEMORY.
+							</p>
+
+							
+							<ul class="actions">
+								<li><a href="https://github.com/gilberthputra/nyc-tlc/blob/main/Report.pdf" class="button"> READ MORE </a></li>
+								<li><a href="https://github.com/gilberthputra/nyc-tlc" class="button primary"> GITHUB </a></li>
+							</ul>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/gilberthputra" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/gilbert-putra/" class="icon brands style2 fa-linkedin"><span class="label">linkedin</span></a></li>
+								</ul>
+							</section>
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><a class="icon solid style2 fa-phone"><span class="label">Phone</span> </a> +61 431 445 666</li>
+									<li><a class="icon solid style2 fa-envelope"><span class="label">Email</span> </a> harlimgilbert@gmail.com</li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
